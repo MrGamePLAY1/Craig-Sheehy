@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
     <title>My Portfolio</title>
 
     <!-- Nav Bar -->
     <div id="topnav">
-        <nav role="navigation">
-            <a class="active" style="text-decoration: none;" href="#home">Home</a>
-            <a style="text-decoration: none;" href="#news">News</a>
-            <a style="text-decoration: none;" href="#about">About</a>
-            <a style="text-decoration: none; padding-left: 650px;" href="#contact">Contact</a>
-        </nav>
+        <ul>
+            <li><a class="active" style="text-decoration: none;" href="#home">Home</a></li>
+            <li><a style="text-decoration: none;" href="#news">News</a></li>
+            <li><a style="text-decoration: none;" href="#about">About</a></li>
+            <div id="topnav-right">
+                <li><a style="text-decoration: none;" href="#contact">Contact</a></li>
+            </div>
+        </ul>
     </div>
 
     <!-- Just some styling -->
@@ -29,23 +34,45 @@
             color: white;
             padding-left: 10%;
             font-weight: bold;
+            font-size: 55px;
             padding-top: 20px;
+            font-family: 'Castoro', serif;
         }
 
         h2{
             color: white;
             padding-left: 10%;
+            font-family: 'Castoro', serif;
         }
 
         p{
             color: white;
             padding-left: 10%;
-            font-size: 15px;
+            font-size: 18px;
+            font-family: 'Castoro', serif;
         }
 
         /* When clicked update */
         a:active{
-            color: white;
+            color: rgb(255, 255, 255);
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
         }
 
         /* The div for nav bar */
@@ -57,6 +84,16 @@
             position: fixed;
             top: 3%;
         }
+
+        #topnav-right{
+            float: right;
+        }
+
+         li a:hover {
+            letter-spacing: 10px; 
+            transition: all 1s ease; 
+            cursor: pointer
+        }
     </style>
 </head>
 <body>
@@ -64,7 +101,7 @@
     <h1>a Developer. Designer. Creator.</h1>
     <p>a person who enjoys to create, design and develop fun and interesting projects.</p>
 
-    <a style="text-decoration: none; padding-left: 10%; color: #20bd4a;" href="/index.html">Learn more ></a>
+    <a style="text-decoration: none; font-family: 'Castoro', serif; font-size: 20px; padding-left: 10%; color: #20bd4a;" href="/index.html">Learn more ></a>
     
     
 </body>
