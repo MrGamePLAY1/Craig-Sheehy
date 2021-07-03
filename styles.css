@@ -1,9 +1,83 @@
-h1 
-{
+body{
+    background-color: rgb(7, 7, 7);
+    padding-top: 20%;
+}
+
+h1{
+    color: white;
+    padding-left: 10%;
+    font-weight: bold;
+    font-size: 55px;
+    padding-top: 20px;
+    font-family: 'Castoro', serif;
+}
+
+h2{
+    color: white;
+    padding-left: 10%;
+    font-family: 'Castoro', serif;
+}
+
+p{
+    color: white;
+    padding-left: 10%;
+    font-size: 18px;
+    font-family: 'Castoro', serif;
+}
+
+/* Nav Bar Start */
+/* When clicked update */
+.topnav a:active{
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* The div for nav bar */
+.topnav{
+    width: 100%;
+    padding-left: 10%;
+    overflow: hidden;
+    letter-spacing: 7px;
+    word-spacing: 30px;
+}
+
+.topnav-right{
+    float: right;
+    padding-right: 10%;
+}
+
+.topnav a{
+    float: left;
+    color: #20bd4a;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a.active {
+    background-color: #1d1d1d80;
     color: white;
 }
 
-body
-{
-    color: black;
+.topnav a:hover {
+    letter-spacing: 10px; 
+    transition: all 1s ease; 
+    cursor: pointer
+}
+
+@media screen and (max-width: 500px) {
+    .topnav a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+
+    .topnav-right{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
 }
