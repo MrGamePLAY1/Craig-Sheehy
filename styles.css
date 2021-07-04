@@ -18,6 +18,10 @@ h2{
     font-family: 'Castoro', serif;
 }
 
+body{
+    display: flexbox;
+}
+
 p{
     color: white;
     padding-left: 10%;
@@ -29,6 +33,13 @@ p{
 /* When clicked update */
 .topnav a:active{
     background-color: rgb(255, 255, 255);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 1%;
+    left: 0;
 }
 
 
