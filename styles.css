@@ -42,6 +42,11 @@ h2{
 
 body{
     display: flexbox;
+    animation: fadeIn linear 1s;
+    -webkit-animation: fadeIn linear 1s;
+    -moz-animation: fadeIn linear 1s;
+    -o-animation: fadeIn linear 1s;
+    -ms-animation: fadeIn linear 1s;
 }
 
 p{
@@ -153,14 +158,21 @@ input[type=text], select, textarea {
     color: #20bd4a;
   }
 
-  
+  .getInTouch{
+    padding-left: 45%;
+  }
+
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
   /* Add a background color and some padding around the form */
   .container {
     position: relative;
-    left: 450px;
+    left: 25%;
     border-radius: 10px;
     background-color: #242323;
     width: 50%;
     padding: 20px;
-    
   }
