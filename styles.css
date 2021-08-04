@@ -1,3 +1,17 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p{
+  margin: 0;
+}
+
 /* Scrollbar */
 /* width */
 ::-webkit-scrollbar {
@@ -40,9 +54,6 @@ h2{
     font-family: 'Castoro', serif;
 }
 
-body{
-    display: flexbox;
-}
 
 p{
     color: white;
@@ -62,6 +73,13 @@ header{
     width: 100%;
     top: 1%;
     left: 0;
+}
+
+.main{
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
 }
 
 
@@ -102,18 +120,26 @@ header{
 @media screen and (max-width: 500px) {
     .topnav a {
       float: none;
-      display: block;
+      display: flex;
       width: 100%;
       text-align: left;
     }
 
     .topnav-right{
         float: none;
-        display: block;
+        display: flex;
         width: 100%;
         text-align: left;
     }
 }
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+   .content {
+    width: 100%;
+    padding-top: 30%;
+    
+  }
 
 /* For contact page */
 /* Style inputs with type="text", select elements and textareas */
@@ -164,3 +190,4 @@ input[type=text], select, textarea {
     padding: 20px;
     
   }
+}
