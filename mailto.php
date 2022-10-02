@@ -1,57 +1,51 @@
 <?php
+if (isset($_POST['Email'])) {
 
-if (isset($_POST['Email']))
-
-    //Sending
+    // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "craigsheehy123@gmail.com";
-    $email_sub = "Person Website Form Submission";
+    $email_subject = "New form submissions";
 
-    // This is for if there are issues found in the form.
-    function issue($error)
+    function problem($error)
     {
-        echo "We are sorry, but there were error(s) found in the form you submitted.";
-        echo "Here are the error(s). <br><br>";
+        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "These errors appear below.<br><br>";
         echo $error . "<br><br>";
+        echo "Please go back and fix these errors.<br><br>";
         die();
     }
 
-    //Checking the data
+    // validation expected data exists
     if (
-       !isset($_POST['Name']) ||
-       !isset($_POST['Email']) ||
-       !isset($_POST['Message'])
+        !isset($_POST['Name']) ||
+        !isset($_POST['Email']) ||
+        !isset($_POST['Message'])
     ) {
-        issue('We are sorry, but there is an issue with your form.');
+        problem('We are sorry, but there appears to be a problem with the form you submitted.');
     }
 
-    //Requireds
     $name = $_POST['Name']; // required
     $email = $_POST['Email']; // required
     $message = $_POST['Message']; // required
 
     $error_message = "";
-    $email_expected = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
-    $name_expected = "/^[A-Za-z .'-]+$/";
+    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 
-
-    //Check if the email is valid
     if (!preg_match($email_exp, $email)) {
-        $error_message .= 'The email address you entered does not appear to be valid.<br>';
+        $error_message .= 'The Email address you entered does not appear to be valid.<br>';
     }
 
-    //Checking if name is valid
-    if(!preg_match($name_expected, $name)) {
-        $error_message .= 'The name you entered does not appear to be valid.<br>';
+    $string_exp = "/^[A-Za-z .'-]+$/";
+
+    if (!preg_match($string_exp, $name)) {
+        $error_message .= 'The Name you entered does not appear to be valid.<br>';
     }
 
-
-    //Checking if message is valid
     if (strlen($message) < 2) {
         $error_message .= 'The Message you entered do not appear to be valid.<br>';
     }
 
     if (strlen($error_message) > 0) {
-        issue($error_message);
+        problem($error_message);
     }
 
     $email_message = "Form details below.\n\n";
@@ -78,4 +72,5 @@ if (isset($_POST['Email']))
     Thank you for contacting us. We will be in touch with you very soon.
 
 <?php
+}
 ?>
