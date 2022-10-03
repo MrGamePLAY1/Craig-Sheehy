@@ -2,11 +2,12 @@
   margin: 0;
   padding: 0;
 }
+
 /* Scrollbar */
 /* width */
-::-webkit-scrollbar {
-    width: 10px;
-  }
+  ::-webkit-scrollbar {
+      width: 10px;
+    }
   
   /* Track */
   ::-webkit-scrollbar-track {
@@ -26,8 +27,9 @@
 body{
     background-color: rgb(7, 7, 7);
     padding-top: 20%;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+    overflow: hidden;
+    /* overflow-y: scroll; */
+    /* scroll-behavior: smooth; */
 }
 
 h1{
@@ -188,8 +190,8 @@ header{
     width: 100%;
     height: 100%;
     padding-top: 45%;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+    overflow-y: scroll; 
+    scroll-behavior: smooth; 
     height: 100vh;
   }
 }
@@ -234,7 +236,7 @@ input[type=text], select, textarea {
 
   /* Add a background color and some padding around the form */
   .container {
-    position: fixed;
+    position: block;
     margin: auto;
     margin-left: 25%;
     border-radius: 10px;
