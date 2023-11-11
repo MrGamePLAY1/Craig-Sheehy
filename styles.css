@@ -121,25 +121,28 @@ h1{
   font-family: 'Castoro', serif;
 }
 
+#main-content {
+  padding-left: 10%;
+}
+
+h2, h1 {
+  font-family: 'Castoro', serif;
+}
 
 .content {
+  margin-top: 10%;
   color: white;
   padding-left: 10%;
   font-size: 17px;
   font-family: 'Castoro', serif;
 }
 
+
+
 /* Nav Bar Start */
 /* When clicked update */
 .topnav a:active{
     background-color: rgb(255, 255, 255);
-}
-
-header{
-    position: fixed;
-    width: 100%;
-    top: 1%;
-    left: 0;
 }
 
 
