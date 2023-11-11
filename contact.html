@@ -15,38 +15,37 @@
       <title>Contact</title>
     </head>
 
-    <header>
-      <!-- Nav Bar -->
-      <div class="topnav">
-          <a style="text-decoration: none;" href="/index.html"><i class="fa fa-fw fa-home"></i>Home</a>
-          <a style="text-decoration: none;" href="/about.html"><i class="fa fa-fw fa-user"></i>About</a>
-          <a style="text-decoration: none;" href="/news.html"><i class="fa fa-fw fa-search"></i>News</a>
-          <a style="text-decoration: none;" href="/projects.html"><i class="fa fa-archive"></i>Projects</a>
-          <div class="topnav-right">
-              <a class="active" style="text-decoration: none;" href="/contact.html"><i class="fa fa-fw fa-envelope"></i></i>Contact</a>
-          </div>
+<!-- Nav Bar -->
+<div class="topnav">
+    <a style="text-decoration: none;" href="/index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a style="text-decoration: none;" href="/about.html"><i class="fa fa-fw fa-user"></i>About</a>
+    <a style="text-decoration: none;" href="/news.html"><i class="fa fa-fw fa-search"></i>News</a>
+    <a style="text-decoration: none;" href="/projects.html"><i class="fa fa-archive"></i>Projects</a>
+    <div class="topnav-right">
+        <a class="active" style="text-decoration: none;" href="/contact.html"><i class="fa fa-fw fa-envelope"></i></i>Contact</a>
+    </div>
+</div>
+
+
+<body>
+    <div class="content">
+    <h1 class="getInTouch">Get in touch</h1>
+    <div class="container">
+        <form action="mailto.php" method="post">
+      
+          <label for="name">Name</label>
+          <input type="text" id="name-text" name="Name" placeholder="Your name.">
+      
+          <label for="email">Email</label>
+          <input type="text" id="email-text" name="email" placeholder="Your email">
+      
+          <label for="message">Message</label>
+          <textarea id="message-text" name="message" placeholder="Write something." style="height:100px"></textarea>
+      
+          <input type="submit" value="Submit">     
+        </form>
       </div>
-  </header>
+    </div>
 
-    <body>
-        <div class="content">
-        <h1 class="getInTouch">Get in touch</h1>
-        <div class="container">
-            <form action="mailto.php" method="post">
-          
-              <label for="name">Name</label>
-              <input type="text" id="name-text" name="Name" placeholder="Your name.">
-          
-              <label for="email">Email</label>
-              <input type="text" id="email-text" name="email" placeholder="Your email">
-          
-              <label for="message">Message</label>
-              <textarea id="message-text" name="message" placeholder="Write something." style="height:100px"></textarea>
-          
-              <input type="submit" value="Submit">     
-            </form>
-          </div>
-        </div>
-
-    </body>
+</body>
 </html>
