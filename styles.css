@@ -3,6 +3,19 @@
   padding: 0;
 }
 
+  /* Reset all styles for the link */
+a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit the default text color */
+  cursor: pointer; /* Set the cursor to pointer on hover (optional) */
+}
+
+  /* Remove hover styles */
+a:hover {
+  text-decoration: none; /* Remove any additional decoration on hover */
+  color: #20bd4a; /* Inherit the default text color on hover */
+}
+
 /* Scrollbar */
 /* width */
   ::-webkit-scrollbar {
