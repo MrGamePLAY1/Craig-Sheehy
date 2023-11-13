@@ -142,8 +142,16 @@ h2, h1 {
   font-family: 'Castoro', serif;
 }
 
+.project_content {
+  margin-top: 7%;
+  color: white;
+  padding-left: 10%;
+  font-size: 17px;
+  font-family: 'Castoro', serif;
+}
+
 .content {
-  margin-top: 10%;
+  margin-top: 15%;
   color: white;
   padding-left: 10%;
   font-size: 17px;
