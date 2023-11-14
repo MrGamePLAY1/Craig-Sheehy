@@ -159,13 +159,11 @@ h2, h1 {
 }
 
 
-
 /* Nav Bar Start */
 /* When clicked update */
 .topnav a:active{
     background-color: rgb(255, 255, 255);
 }
-
 
 
 /* The div for nav bar */
