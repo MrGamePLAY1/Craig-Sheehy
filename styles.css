@@ -47,6 +47,11 @@ body{
     /* scroll-behavior: smooth; */
 }
 
+#icons {
+  color: #20bd4a;
+}
+
+
 main {
   width: 80%; /* Adjust as needed */
   margin: 0 auto; /* Center the content */
@@ -69,31 +74,6 @@ h1{
   left: 0;                         
 }
 
-#footer .twitter {
-  background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-#footer .linkedin {
-  background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
-  background-repeat: no-repeat;
-  background-position: -78px 0;
-}
-#footer .facebook {
-  background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
-  background-repeat: no-repeat;
-  background-position: -233px 0;
-}
-#footer .skype {
-  background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
-  background-repeat: no-repeat;
-  background-position: -156px 0;
-}
-#footer .flickr {
-  background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
-  background-repeat: no-repeat;
-  background-position: -310px 0;
-}
 #footer a {
   height: 56px;
   width: 56px;
