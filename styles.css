@@ -113,12 +113,33 @@ h1{
   padding-left: 10%;
 }
 
-h2, h1 {
+h2, h1, h4 {
   font-family: 'Castoro', serif;
+}
+
+h4 {
+  color: #20bd4a;
 }
 
 .project_content {
   margin-top: 0%;
+  color: white;
+  padding-left: 10%;
+  font-size: 17px;
+  font-family: 'Castoro', serif;
+}
+
+.about_content {
+  margin-top: 4%;
+  color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 17px;
+  font-family: 'Castoro';
+}
+
+.index_content {
+  margin-top: 10%;
   color: white;
   padding-left: 10%;
   font-size: 17px;
