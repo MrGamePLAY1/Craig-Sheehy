@@ -102,11 +102,6 @@ h1{
 }
 
 
-.getInTouch{
-  padding-left: 25%;
-}
-
-
 
 #titles {
   color: white;
@@ -131,7 +126,7 @@ h2, h1 {
 }
 
 .content {
-  margin-top: 15%;
+  margin-top: 5%;
   color: white;
   padding-left: 10%;
   font-size: 17px;
