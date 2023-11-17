@@ -1,3 +1,5 @@
+![Drag Racing](logo.png)
+
 # Sheehy Details
 
 This is a website profiling my business Sheehy Details. A detailing business which tailors making your vehicle shine, inside and out. Built using HTML, CSS, PHP and Javascript.
