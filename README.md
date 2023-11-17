@@ -1,4 +1,6 @@
-![Drag Racing](logo.png)
+<div style="text-align:center">
+  <img src="logo.png" alt="Logo">
+</div>
 
 # Sheehy Details
 
