@@ -12,6 +12,14 @@ footer {
   width: 100%;
 }
 
+main {
+  flex: 1;
+  /* Add some content here to make the page scrollable */
+  padding: 20px;
+  margin-bottom: 60px; /* Adjust this value to match the height of your footer */
+}
+
+
   /* Reset all styles for the link */
 a {
   text-decoration: none; /* Remove underline */
@@ -52,6 +60,9 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     /* overflow-y: scroll; */
     /* scroll-behavior: smooth; */
 }
@@ -62,8 +73,10 @@ body{
 
 
 main {
-  width: 80%; /* Adjust as needed */
-  margin: 0 auto; /* Center the content */
+  flex: 1;
+  /* Add some content here to make the page scrollable */
+  padding: 20px;
+  margin-bottom: 60px; /* Adjust this value to match the height of your footer */
 }
 
 h1{
