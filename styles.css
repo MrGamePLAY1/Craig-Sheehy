@@ -52,6 +52,11 @@ a:hover {
     background: rgb(63, 63, 63); 
   }
 
+p {
+  padding-left: 5%;
+}
+
+
 body{
     display: flex;
     flex-direction: column;
@@ -110,18 +115,29 @@ h1{
   padding-left: 10%;
 }
 
+
+
 h2, h1, h4 {
   font-family: 'Castoro', serif;
 }
 
 h4 {
   color: #20bd4a;
+  padding-left: 5%;
 }
 
 .project_content {
   margin-top: 0%;
   color: white;
   padding-left: 10%;
+  font-size: 17px;
+  font-family: 'Castoro', serif;
+}
+
+.news_content {
+  margin-top: 0%;
+  color: white;
+  padding: 10%;
   font-size: 17px;
   font-family: 'Castoro', serif;
 }
