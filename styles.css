@@ -1,22 +1,20 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; 
 }
 
 footer {
   color: #fff;
   text-align: center;
   padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
 
 main {
   flex: 1;
-  /* Add some content here to make the page scrollable */
   padding: 20px;
   margin-bottom: 60px; /* Adjust this value to match the height of your footer */
+  overflow-y: auto;
 }
 
 
@@ -86,7 +84,7 @@ h1{
 }
 
 #bottom {
-  position:absolute; 
+  /* position:absolute;  */
   background-color: rgb(7, 7, 7);                
   bottom:0;                         
   right:0;
@@ -100,27 +98,6 @@ h1{
   display: inline-block;
   margin: 10px;
 }
-#footer a:hover {
-  transition: all 0.3s ease-out;
-  color: #20bd4a;
-  -webkit-transition: all 0.3s ease-out;
-}
-#footer .twitter:hover {
-  background-position: 0 -56px;
-}
-#footer .facebook:hover {
-  background-position: -233px -56px;
-}
-#footer .skype:hover {
-  background-position: -156px -56px;
-}
-#footer .linkedin:hover {
-  background-position: -78px -56px;
-}
-#footer .flickr:hover {
-  background-position: -310px -56px;
-}
-
 
 
 #titles {
@@ -227,7 +204,7 @@ h4 {
     .topnav-right{
         float: none;
         display: flex;
-        width: 100%;
+        width: 50%;
         text-align: left;
     }
 
